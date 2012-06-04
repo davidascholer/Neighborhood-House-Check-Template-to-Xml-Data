@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, HomeScreen!</string>
+    <string name="app_name">Weed Walk</string>
+    <string name="tab1">Tab 1</string>
+    <string name="tab2">Tab 2</string>
+    <string name="tab3">Tab 3</string>
+    <string name="inspection_type">Inspection Type</string>
+    <string name="spinner_title_home">Select One</string>
+
+    <string-array name="spinner_array_home">
+        <item>----------</item>
+        <item>Assigned</item>
+        <item>Re-Walk</item>
+    </string-array>
+
+    <string name="team_members">Team Members</string>
+    <string name="important_dates">Important Dates</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email">Email Address</string>
+    <string name="intials">Initials</string>
+    <string name="vone">Volunteer One</string>
+    <string name="vtwo">Volunteer Two</string>
+    <string name="datetoday">Today\'s Date</string>
+    <string name="date">mm/dd/yyyy</string>
+    <string name="blank">----------</string>
+    <string name="compliance_date">Compliance Date    </string>
+    <string name="rewalk_date">Scheduled Rewalk Date</string>
+
+    <color name="smoke">#f5f5f5</color>
+    <color name="red">#FF0000</color>
+    <color name="green">#008000</color>
+    <color name="blue">#0000FF</color>
+
+    <string name="pass_button_text">This home passes the weed walk. This includes homes that have recommended changes.</string>
+    <string name="fail_button_text">Select this if the home fails the weed walk.</string>
+    <string name="passed_text">Your home and yard are beautiful and well maintained. Thank you!</string>
+    <string name="passed">Passed</string>
+    <string name="no_further_action">During our review, the volunteer noted some items that you could consider changing. For example, tree branches touching the home, although not a rule violation, could allow insects a path into your home. Or a crack in your patio that might be a tripping hazard.\nThese are not requirements and no action or response is needed to either the board or the property manager.</string>
+    <string name="further_action">Your yard did not pass. Please review this list and ensure you fix the noted issues by the compliance date noted on the form. A re-walk will be completed by the volunteer some time soon after that compliance date. If you have not fixed the issue(s) noted here, you will be fined according to our current policies\n</string>
+    <string name="failed">Failed</string>
+    <string name="homeinfo">Purpose of This Page
+\n\n
+This page configures the program for the inspection  
+Proceed as follows
+\n\n
+1) Select the inspection type   The  type selected assigns rules within the program.
+\n\n
+2) Open the assignment file.   This assigns the list of homes to be inspected by the team.
+\n\n
+3) Enter the names and initials of the team.   This information is for the property manger and not printed on the form sent to residents.
+\n\n
+4) Enter the compliance and rewalk dates.  </string>
+    <string name="assignedinfo">Purpose of This Page
+\n\n
+These homes have been assigned to you for the weedwalk.
+\n\n
+Please choose the next home to inspect by selecting the radio button and then press "Open".  The inspection form will open.  Complete the form.
+\n\n
+This page only shows the homes you have not inspected.  As you complete each inspection (pass or fail) the home will be moved to he "Completed" tab.
+\n\n
+The prior year results and Arch Requests are provided for information</string>
+    <string name="forminfo">Purpose of This Page
+\n\n
+Note the address of the "Current Home" and ensure this is the home you are evaluating.
+\n\n
+After your walk around, please select pass or fail for this home.  You will be taken to the associated section of the form</string>
+    <string name="pictureinfo">Purpose of this page
+\n\n
+This allows you to review the pictures you have taken of this property.</string>
+    <string name="completedinfo">Purpose of this Page
+\n\n
+You may view the writeups of any completed home by selecting the radio button and press "Open"
+\n\n
+The homes in the "Failed" table will be saved for the re-walk.  When you perform the rewalk, these failed homes will be listed in your "Assigned" tab.</string>
+    <string name="admininfo">Purpose of this page
+\n\n
+Once you have completed the inspection, it is time to close out your work and submit the data to the weedwalk team captain who will submit it to the property manager.
+\n\n
+Please review what you have done, then you press a button "close out" or something which does the final write to the file.</string>
+    <string name="helpinfo">Purposes of this Page
+\n\n
+This page gives specific guidance on what is accepable for architectural compliance</string>
+    <string name="passedinfo">Purpose of This Page
+\n\n
+Use this page if the home has passed.
+\n\n
+If you want a picture, press the "Picture" button and the tablet camera function will be displayed. Once the picture is taken, it will automatically be assigned to this home with the date/time automatically used as file name.  
+\n\n
+Pictures taken here, may be viewed on the "Pictures" tab.</string>
+    <string name="failedinfo">Purpose of This Page
+\n\n
+Use this page if the home has failed.
+\n\n
+If you want a picture, press the "Picture" button and the tablet camera function will be displayed. Once the picture is taken, it will automatically be assigned to this home with the date/time automatically used as file name.  
+\n\n 
+Pictures taken here, may be viewed on the "Picutres" tab.</string> 
+    <string name="weedwalkstring">Welcome to the Meadows Weed Walk Tool.\n\n This tool is used by Weed Walk volunteers to make it easier and more efficient to do the weed walk. \n\nWhat will happen?</string>
+    <string name="importstring">From the home page, the system should automatically find the assignment file. However, if it does not, you can use this feature to manually locate the file.</string>
+    <string name="closeout">When you have completed the weedwalk, use this page to close out and submit your work to the property manager. Once the file is closed, the results can\'t be changed except with help from the administrator. The file will be written and place on the computer\'s desktop to be submitted to the property manager.</string>
+    <string name="information">This program is a product of Docent IMS. For informatin, contact Wayne Glover at wglover@docentims.com</string>
+
+</resources>

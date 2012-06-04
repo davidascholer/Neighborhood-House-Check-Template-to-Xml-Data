@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkedtab"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/assignedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/homeButton"
+                    android:layout_weight="1"
+                    android:text="Assigned" />
+
+                <Button
+                    android:id="@+id/formButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/assignedButton"
+                    android:layout_weight="1"
+                    android:text="Form" />
+
+                <Button
+                    android:id="@+id/pictureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/formButton"
+                    android:layout_weight="1"
+                    android:text="Picture" />
+
+                <Button
+                    android:id="@+id/completedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/pictureButton"
+                    android:layout_weight="1"
+                    android:text="Completed" />
+
+                <Button
+                    android:id="@+id/adminButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/completedButton"
+                    android:layout_weight="1"
+                    android:text="Admin" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/adminButton"
+                    android:layout_weight="1"
+                    android:text="Help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leftTextView"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_below="@+id/buttonLayout"
+            android:background="@drawable/white_border_right"
+            android:text="@string/pictureinfo" />
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/leftTextView"
+            android:layout_toRightOf="@+id/leftTextView" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <RelativeLayout
+                    android:id="@+id/formHomeRelLayout"
+                    android:layout_width="300dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:background="@drawable/red_border" >
+
+                    <TextView
+                        android:id="@+id/emptyTextView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_margin="5dp"
+                        android:text="Div - Lot:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/formHomeDivLotTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/emptyTextView1"
+                        android:layout_centerHorizontal="true"
+                        android:text="blank"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/emptyTextView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_below="@+id/emptyTextView1"
+                        android:layout_margin="5dp"
+                        android:text="Address:"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:id="@+id/formHomeAddressTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/formHomeDivLotTextView"
+                        android:layout_alignTop="@+id/emptyTextView2"
+                        android:text="blank"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/formHomeRelLayout"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="90dp"
+                    android:text="These are the pictures you have taken for this home."
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/textView2"
+                    android:layout_alignTop="@+id/formHomeRelLayout"
+                    android:layout_marginRight="140dp"
+                    android:text="Pictures"
+                    android:textSize="24sp" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_alignTop="@+id/imageView1"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border" android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView1"
+                    android:layout_alignRight="@+id/imageView1"
+                    android:layout_below="@+id/imageView1" android:hint='segment will be auto-filled. for now reenter.'/>
+
+                <EditText
+                    android:id="@+id/editText2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView2"
+                    android:layout_alignRight="@+id/imageView2"
+                    android:layout_below="@+id/imageView2"
+                    android:layout_centerHorizontal="true" android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/editText1"
+                    android:layout_marginLeft="75dp"
+                    android:layout_marginTop="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border" android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_alignTop="@+id/imageView4"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginRight="5dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border" android:visibility="invisible"/>
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/imageView5"
+                    android:layout_marginRight="75dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border" android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/editText5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView5"
+                    android:layout_alignRight="@+id/imageView5"
+                    android:layout_below="@+id/imageView5"
+                    android:layout_centerHorizontal="true" android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView4"
+                    android:layout_alignRight="@+id/imageView4"
+                    android:layout_below="@+id/imageView4" android:visibility="invisible"/>
+
+                <EditText
+                    android:id="@+id/editText6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/imageView6"
+                    android:layout_alignRight="@+id/imageView6"
+                    android:layout_alignTop="@+id/editText5" android:visibility="invisible"/>
+
+                <Button
+                    android:id="@+id/takePictureButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:text="Take Picture" />
+
+                <Button
+                    android:id="@+id/alldoneButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/takePictureButton"
+                    android:text="Done" />
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/formHomeRelLayout"
+                    android:layout_alignRight="@+id/alldoneButton"
+                    android:layout_alignTop="@+id/editText2"
+                    android:visibility="invisible" >
+
+                    <requestFocus />
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/imageView3"
+                    android:layout_width="200dp"
+                    android:layout_height="125dp"
+                    android:layout_above="@+id/editText3"
+                    android:layout_alignLeft="@+id/editText3"
+                    android:layout_toLeftOf="@+id/takePictureButton"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/white_border"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/white_border_top"
+            android:text="       Designed by: Wayne Glover Version 1.2" />
+    </RelativeLayout>
+
+</LinearLayout>

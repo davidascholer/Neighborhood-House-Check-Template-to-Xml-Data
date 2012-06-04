@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkedtab"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/assignedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/homeButton"
+                    android:layout_weight="1"
+                    android:text="Assigned" />
+
+                <Button
+                    android:id="@+id/formButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/assignedButton"
+                    android:layout_weight="1"
+                    android:text="Form" />
+
+                <Button
+                    android:id="@+id/pictureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/formButton"
+                    android:layout_weight="1"
+                    android:text="Picture" />
+
+                <Button
+                    android:id="@+id/completedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/pictureButton"
+                    android:layout_weight="1"
+                    android:text="Completed" />
+
+                <Button
+                    android:id="@+id/adminButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/completedButton"
+                    android:layout_weight="1"
+                    android:text="Admin" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/adminButton"
+                    android:layout_weight="1"
+                    android:text="Help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leftTextView"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_below="@+id/buttonLayout"
+            android:background="@drawable/white_border_right"
+            android:text="@string/admininfo" />
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/leftTextView"
+            android:layout_toRightOf="@+id/leftTextView" 
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="5dp"
+                    android:text="Administrator Functions"
+                    android:textColor="@color/blue"
+                    android:textSize="24sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/textView1"
+                    android:layout_margin="5dp"
+                    android:text="System Setup"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/importButton"
+                    android:layout_width="75dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView2"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/green"
+                    android:text="Import" />
+
+                <RelativeLayout
+                    android:id="@+id/relativeLayout6"
+                    android:layout_width="150dp"
+                    android:layout_height="80dp"
+                    android:layout_alignTop="@+id/importButton"
+                    android:layout_toLeftOf="@+id/textView1"
+                    android:background="@drawable/white_border_space" >
+
+                    <TextView
+                        android:id="@+id/textView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:text="Assignment File" android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/importTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginBottom="25dp"
+                        android:background="@color/smoke"
+                        android:clickable="true"
+                        android:hint="Choose File"
+                        android:isScrollContainer="true"
+                        android:maxLines="1"
+                        android:scrollbarAlwaysDrawHorizontalTrack="true" android:layout_marginLeft="10dp" android:layout_marginRight="10dp"/>
+
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/relativeLayout6"
+                    android:layout_alignTop="@+id/relativeLayout6"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toLeftOf="@+id/importButton"
+                    android:layout_toRightOf="@+id/relativeLayout6"
+                    android:text="@string/importstring" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight=".1" android:background="@drawable/blu_sprtr">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight="1">
+                
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_margin="5dp"
+                    android:text="System Closeout"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+                <Button
+                    android:id="@+id/closeoutButton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginRight="20dp"
+                    android:background="@color/green"
+                    android:text="Closeout" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignTop="@+id/closeoutButton"
+                    android:layout_marginLeft="200dp"
+                    android:layout_toLeftOf="@+id/closeoutButton"
+                    android:text="@string/closeout" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight=".1" android:background="@drawable/blu_sprtr">
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:text="Program Information"
+                    android:textColor="@color/blue"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/textView4"
+                    android:text="@string/information" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/white_border_top"
+            android:text="       Designed by: Wayne Glover Version 1.2" />
+    </RelativeLayout>
+
+</LinearLayout>

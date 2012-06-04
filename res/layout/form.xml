@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkedtab"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/assignedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/homeButton"
+                    android:layout_weight="1"
+                    android:text="Assigned" />
+
+                <Button
+                    android:id="@+id/formButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/assignedButton"
+                    android:layout_weight="1"
+                    android:text="Form" />
+
+                <Button
+                    android:id="@+id/pictureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/formButton"
+                    android:layout_weight="1"
+                    android:text="Picture" />
+
+                <Button
+                    android:id="@+id/completedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/pictureButton"
+                    android:layout_weight="1"
+                    android:text="Completed" />
+
+                <Button
+                    android:id="@+id/adminButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/completedButton"
+                    android:layout_weight="1"
+                    android:text="Admin" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/uncheckedtab"
+                    android:layout_toRightOf="@+id/adminButton"
+                    android:layout_weight="1"
+                    android:text="Help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leftTextView"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_below="@+id/buttonLayout"
+            android:background="@drawable/white_border_right"
+            android:text="@string/forminfo" />
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/leftTextView"
+            android:layout_toRightOf="@+id/leftTextView" >
+
+
+
+    <RelativeLayout
+        android:id="@+id/formRelLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <TextView
+            android:id="@+id/formTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:text="Did the House Pass?"
+            android:textSize="24sp" />
+
+        <Button
+            android:id="@+id/passButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/formTextView"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/green"
+            android:text="Pass" />
+
+        <TextView
+            android:id="@+id/passTextView"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/passButton"
+            android:layout_toRightOf="@+id/passButton"
+            android:text="@string/pass_button_text"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/failButton"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/passButton"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/red"
+            android:text="Fail" />
+
+        <TextView
+            android:id="@+id/failTextView"
+            android:layout_width="450dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/failButton"
+            android:layout_toRightOf="@+id/failButton"
+            android:text="@string/fail_button_text"
+            android:textSize="20sp" />
+        
+        <RelativeLayout
+            android:id="@+id/formHomeRelLayout"
+            android:layout_width="300dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/red_border" >
+
+            <TextView
+                android:id="@+id/emptyTextView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="5dp"
+                android:text="Div - Lot:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/formHomeDivLotTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/emptyTextView1"
+                android:layout_centerHorizontal="true"
+                android:text="blank"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/emptyTextView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_below="@+id/emptyTextView1"
+                android:layout_margin="5dp"
+                android:text="Address:"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/formHomeAddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/formHomeDivLotTextView"
+                android:layout_alignTop="@+id/emptyTextView2"
+                android:text="blank"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/formCancelButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:background="@color/red"
+            android:text="Cancel" />
+        
+    </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/white_border_top"
+            android:text="TextView" />
+    </RelativeLayout>
+
+</LinearLayout>

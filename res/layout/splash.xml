@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </LinearLayout>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_alignParentRight="true" >
+
+            <Button
+                android:id="@+id/nextButton"
+                android:layout_width="100dp"
+                android:layout_height="50dp"
+                android:background="@color/green"
+                android:padding="10dp"
+                android:text="Next" android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_border_top"
+            android:text="       Designed by: Wayne Glover Version 1.2" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="450dp"
+            android:layout_height="380dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="90dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/meadows" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="50dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:text="@string/weedwalkstring" />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="100dp"
+            android:layout_height="50dp"
+            android:layout_alignTop="@+id/MainLayout3"
+            android:layout_toLeftOf="@+id/MainLayout3"
+            android:background="@color/red"
+            android:padding="10dp"
+            android:text="Cancel" android:layout_margin="5dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkedtab"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/assignedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/homeButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Assigned" />
+
+                <Button
+                    android:id="@+id/formButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/assignedButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Form" />
+
+                <Button
+                    android:id="@+id/pictureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/formButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Picture" />
+
+                <Button
+                    android:id="@+id/completedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/pictureButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Completed" />
+
+                <Button
+                    android:id="@+id/adminButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/completedButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Admin" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/adminButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leftTextView"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_below="@+id/buttonLayout"
+            android:background="@drawable/white_border_right"
+            android:text="@string/completedinfo" />
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/completedButton"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/leftTextView"
+            android:layout_toRightOf="@+id/leftTextView"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_margin="10dp"
+                android:text="Homes Inspected by This Team"
+                android:textColor="@color/blue"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/assignedRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ScrollView
+                    android:id="@+id/assignedScrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/topTextView"
+                    android:cacheColorHint="#00000000" >
+
+                    <TableLayout
+                        android:id="@+id/completed_table_layout1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#000000" >
+
+                        <TableRow
+                            android:id="@+id/assigned_table_row_1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/assignedSelectTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Select"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedDivisionTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Division"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedLotTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Lot"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedAddressTextView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_weight="1.5"
+                                android:text="Address"
+                                android:textSize="24sp" />
+
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/topTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homes That Failed"
+                    android:textColor="@color/red"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" >
+
+                <ScrollView
+                    android:id="@+id/assignedScrollView2"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/bottomTextView"
+                    android:cacheColorHint="#00000000" >
+
+                    <TableLayout
+                        android:id="@+id/completed_table_layout2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#000000" >
+
+                        <TableRow
+                            android:id="@+id/assigned_table_row_2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" >
+
+                            <TextView
+                                android:id="@+id/assignedSelectTextView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Select"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedDivisionTextView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Division"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedLotTextView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight=".5"
+                                android:text="Lot"
+                                android:textSize="24sp" />
+
+                            <TextView
+                                android:id="@+id/assignedAddressTextView2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.5"
+                                android:text="Address"
+                                android:textSize="24sp" />
+                        </TableRow>
+                    </TableLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/bottomTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Homes That Passed"
+                    android:textColor="@color/green"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/white_border_top"
+            android:text="       Designed by: Wayne Glover Version 1.2" />
+
+        <Button
+            android:id="@+id/completedButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@+id/bottomTextView"
+            android:text="Button" android:layout_marginBottom="20dp"/>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/MainLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/MainLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <RelativeLayout
+            android:id="@+id/buttonLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" >
+
+            <LinearLayout
+                android:id="@+id/buttonLinearLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <Button
+                    android:id="@+id/homeButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/checkedtab"
+                    android:text="Home" />
+
+                <Button
+                    android:id="@+id/assignedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/homeButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Assigned" />
+
+                <Button
+                    android:id="@+id/formButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/assignedButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Form" />
+
+                <Button
+                    android:id="@+id/pictureButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/formButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Picture" />
+
+                <Button
+                    android:id="@+id/completedButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/pictureButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Completed" />
+
+                <Button
+                    android:id="@+id/adminButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/completedButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Admin" />
+
+                <Button
+                    android:id="@+id/helpButton"
+                    android:layout_width="60dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@+id/adminButton"
+                    android:layout_weight="1"
+                    android:background="@drawable/uncheckedtab"
+                    android:text="Help" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/leftTextView"
+            android:layout_width="140dp"
+            android:layout_height="fill_parent"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_below="@+id/buttonLayout"
+            android:background="@drawable/white_border_right"
+            android:text="@string/assignedinfo" />
+
+        <LinearLayout
+            android:id="@+id/MainLayout3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/bottomTextView"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/leftTextView"
+            android:layout_toRightOf="@+id/leftTextView" >
+
+            <RelativeLayout
+                android:id="@+id/assignedRelativeLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+
+                <TableLayout
+                    android:id="@+id/table_layout"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#000000" >
+
+                    <TableRow
+                        android:id="@+id/assigned_table_row_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" >
+
+                        <TextView
+                            android:id="@+id/assignedSelectTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:text="Select"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/assignedDivisionTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:text="Division"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/assignedLotTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".5"
+                            android:text="Lot"
+                            android:textSize="24sp" />
+
+                        <TextView
+                            android:id="@+id/assignedAddressTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1.5"
+                            android:text="Address"
+                            android:textSize="24sp" android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/assignedResultTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:text="PrYrRslt"
+                            android:textSize="24sp" android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/assignedArchTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight=".2"
+                            android:text="Arch?"
+                            android:textSize="24sp" android:gravity="center"/>
+                    </TableRow>
+                </TableLayout>
+
+                <ScrollView
+                    android:id="@+id/assignedScrollView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:cacheColorHint="#00000000" android:layout_below="@+id/table_layout" android:layout_above="@+id/textView1">
+
+                    <TableLayout
+                        android:id="@+id/assigned_table_layout"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#000000" >
+                    </TableLayout>
+                </ScrollView>
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:text="Inspection Team: blank and blank" android:layout_marginTop="20dp" android:layout_marginRight="5dp" android:layout_marginLeft="5dp" android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/assignedOpenButton"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_margin="5dp"
+                    android:background="@color/green"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:text="Open" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/bottomTextView"
+            android:layout_width="fill_parent"
+            android:layout_height="20sp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/textView1"
+            android:background="@drawable/white_border_top"
+            android:text="       Designed by: Wayne Glover Version 1.2" />
+    </RelativeLayout>
+
+</LinearLayout>

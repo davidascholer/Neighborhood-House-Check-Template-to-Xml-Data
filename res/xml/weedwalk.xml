@@ -1,0 +1,72 @@
+<homeList>
+	<home>
+		<homeUID text="12345" />
+		<homeDiv text="1" />
+		<homeLot text="1" />
+		<homeAdrNumb text="11111" />
+		<homeAdrStreet text="1st ave" />
+	</home>
+	<home>
+		<homeUID text="22345" />
+		<homeDiv text="1" />
+		<homeLot text="2" />
+		<homeAdrNumb text="22222" />
+		<homeAdrStreet text="2nd ave" />
+	</home>
+	<home>
+		<homeUID text="32345" />
+		<homeDiv text="1" />
+		<homeLot text="3" />
+		<homeAdrNumb text="33333" />
+		<homeAdrStreet text="3rd ave" />
+	</home>
+	<home>
+		<homeUID text="42345" />
+		<homeDiv text="2" />
+		<homeLot text="1" />
+		<homeAdrNumb text="44444" />
+		<homeAdrStreet text="4th ave" />
+	</home>
+	<home>
+		<homeUID text="52345" />
+		<homeDiv text="2" />
+		<homeLot text="2" />
+		<homeAdrNumb text="55555" />
+		<homeAdrStreet text="5th ave" />
+	</home>
+	<home>
+		<homeUID text="13345" />
+		<homeDiv text="2" />
+		<homeLot text="3" />
+		<homeAdrNumb text="66666" />
+		<homeAdrStreet text="6th ave" />
+	</home>
+	<home>
+		<homeUID text="23345" />
+		<homeDiv text="2" />
+		<homeLot text="4" />
+		<homeAdrNumb text="77777" />
+		<homeAdrStreet text="7th ave" />
+	</home>
+		<home>
+		<homeUID text="33345" />
+		<homeDiv text="3" />
+		<homeLot text="1" />
+		<homeAdrNumb text="88888" />
+		<homeAdrStreet text="8th ave" />
+	</home>
+	<home>
+		<homeUID text="42345" />
+		<homeDiv text="3" />
+		<homeLot text="2" />
+		<homeAdrNumb text="99999" />
+		<homeAdrStreet text="9th ave" />
+	</home>
+	<home>
+		<homeUID text="52345" />
+		<homeDiv text="3" />
+		<homeLot text="3" />
+		<homeAdrNumb text="121212" />
+		<homeAdrStreet text="10th ave" />
+	</home>
+</homeList>
